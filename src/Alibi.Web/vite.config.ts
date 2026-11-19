@@ -6,5 +6,5 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   build: { outDir: "../Alibi.Api/wwwroot", emptyOutDir: true },
-  server: { proxy: { "/api": "http://localhost:5080", "/docs": "http://localhost:5080", "/openapi": "http://localhost:5080" } },
+  server: { proxy: { "/api": "http://localhost:5165", "/docs": "http://localhost:5165", "/openapi": "http://localhost:5165" } },
 });
