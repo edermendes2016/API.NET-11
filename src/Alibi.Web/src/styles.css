@@ -21,9 +21,8 @@ body {
   background: radial-gradient(1200px 600px at 20% -10%, #2a241b 0%, var(--bg) 60%) fixed, var(--bg);
   color: var(--ink);
   font: 15px/1.55 Inter, system-ui, sans-serif;
-  min-height: 100vh;
-  display: flex; flex-direction: column;
 }
+#root { min-height: 100vh; display: flex; flex-direction: column; }
 a { color: var(--amber); }
 button { font: inherit; }
 
@@ -48,6 +47,7 @@ h1 { font-size: 34px; }
 /* ── Lista de casos ─────────────────────────────────────────── */
 .cases { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px; }
 .folder {
+  display: block; text-decoration: none;
   position: relative; background: var(--paper); color: var(--paper-ink);
   border-radius: 4px 14px 4px 4px; padding: 26px 22px 22px; box-shadow: var(--shadow);
   cursor: pointer; transition: transform .15s ease; border: 0; text-align: left;
@@ -67,6 +67,8 @@ h1 { font-size: 34px; }
 
 /* ── Tela do caso ───────────────────────────────────────────── */
 .case-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; margin-bottom: 18px; }
+.head-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.btn.small { text-decoration: none; display: inline-block; }
 .case-head .meta { color: var(--muted); font-size: 14px; }
 .case-grid { display: grid; grid-template-columns: 330px minmax(0,1fr) 340px; gap: 18px; align-items: start; }
 @media (max-width: 1150px) { .case-grid { grid-template-columns: 1fr 1fr; } .board { grid-column: 1 / -1; } }

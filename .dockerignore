@@ -3,3 +3,5 @@
 **/.vs
 tests/
 .git
+**/node_modules
+src/Alibi.Api/wwwroot
