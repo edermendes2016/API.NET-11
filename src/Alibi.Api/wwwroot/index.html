@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Álibi — Jogo de Investigação</title>
+  <meta name="description" content="Jogo de detetive em .NET 11: interrogue suspeitos, cruze depoimentos e encontre a contradição.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔍</text></svg>">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" id="home-link">ÁLIBI<span>arquivo de casos</span></a>
+    <div class="status" id="status"></div>
+  </header>
+
+  <main id="app"></main>
+
+  <dialog id="verdict" class="verdict">
+    <div class="verdict-body" id="verdict-body" tabindex="-1" autofocus></div>
+    <form method="dialog"><button class="btn">Voltar à investigação</button></form>
+  </dialog>
+
+  <footer class="foot">
+    .NET 11 · C# 15 union types · EF Core 11 FullJoin · SQL Server 2025 VECTOR ·
+    <a href="/docs" target="_blank" rel="noopener">API (Scalar)</a>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
