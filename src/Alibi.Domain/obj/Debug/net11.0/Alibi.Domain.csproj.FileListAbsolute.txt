@@ -1,0 +1,13 @@
+/home/claude/api.net-11/src/Alibi.Domain/bin/Debug/net11.0/Alibi.Domain.deps.json
+/home/claude/api.net-11/src/Alibi.Domain/bin/Debug/net11.0/Alibi.Domain.dll
+/home/claude/api.net-11/src/Alibi.Domain/bin/Debug/net11.0/Alibi.Domain.pdb
+/home/claude/api.net-11/src/Alibi.Domain/obj/Debug/net11.0/Alibi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/claude/api.net-11/src/Alibi.Domain/obj/Debug/net11.0/Alibi.Domain.AssemblyInfoInputs.cache
+/home/claude/api.net-11/src/Alibi.Domain/obj/Debug/net11.0/Alibi.Domain.AssemblyInfo.cs
+/home/claude/api.net-11/src/Alibi.Domain/obj/Debug/net11.0/Alibi.Domain.csproj.CoreCompileInputs.cache
+/home/claude/api.net-11/src/Alibi.Domain/obj/Debug/net11.0/Alibi.Domain.sourcelink.json
+/home/claude/api.net-11/src/Alibi.Domain/obj/Debug/net11.0/Alibi.Domain.dll
+/home/claude/api.net-11/src/Alibi.Domain/obj/Debug/net11.0/refint/Alibi.Domain.dll
+/home/claude/api.net-11/src/Alibi.Domain/obj/Debug/net11.0/Alibi.Domain.pdb
+/home/claude/api.net-11/src/Alibi.Domain/obj/Debug/net11.0/ref/Alibi.Domain.dll
+/home/claude/api.net-11/src/Alibi.Domain/obj/Debug/net11.0/Alibi.Do.A432F4E8.Up2Date

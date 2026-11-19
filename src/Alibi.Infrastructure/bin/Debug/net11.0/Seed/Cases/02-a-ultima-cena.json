@@ -1,0 +1,485 @@
+{
+  "slug": "a-ultima-cena",
+  "title": "A Última Cena",
+  "difficulty": "Médio",
+  "setting": "Teatro Municipal, São Paulo — noite de estreia de 'Hamlet', durante o intervalo.",
+  "victim": "Bernardo Lins, diretor da companhia, 54 anos",
+  "crimeScene": "Sala da Direção",
+  "crimeTime": "21:00",
+  "summary": "No intervalo da estreia, o diretor Bernardo Lins foi atingido na cabeça com o troféu que ele próprio tinha ganhado no ano anterior. O corpo foi achado às 21h30 na Sala da Direção. A perícia fixa o golpe às 21h. O segundo ato nunca começou.",
+  "solution": "Caio Ferraz, o ator substituto, descobriu que Bernardo ia demiti-lo depois da estreia. Às 21h foi à Sala da Direção pedir mais uma chance; a discussão terminou com o troféu. Ele disse estar na Sala de Som com o técnico, mas a câmera do corredor da direção — consertada na véspera — registrou sua entrada.",
+  "locations": [
+    "Palco",
+    "Camarim de Vivian",
+    "Coxia",
+    "Bilheteria",
+    "Foyer",
+    "Sala de Som",
+    "Porão",
+    "Sala da Direção"
+  ],
+  "suspects": [
+    {
+      "key": "vivian",
+      "name": "Vivian Rocha",
+      "role": "Atriz principal",
+      "description": "45 anos, estrela da companhia. Fazia Gertrudes e brigava com o diretor em todo ensaio.",
+      "personality": "Dramática, vaidosa, responde como se estivesse em cena. Gosta de plateia, odeia ser interrompida.",
+      "secret": "Ia trocar de companhia e levar metade do elenco. Não tem nada a ver com o crime.",
+      "isCulprit": false,
+      "evasive": "Querido, eu sou atriz, não testemunha de novela. Próxima pergunta.",
+      "truth": {
+        "20:00": "Palco",
+        "20:30": "Camarim de Vivian",
+        "21:00": "Foyer",
+        "21:30": "Foyer",
+        "22:00": "Palco"
+      },
+      "alibi": {
+        "20:00": {
+          "location": "Palco",
+          "statement": "Em cena, primeiro ato."
+        },
+        "20:30": {
+          "location": "Camarim de Vivian",
+          "statement": "Trocando de figurino."
+        },
+        "21:00": {
+          "location": "Foyer",
+          "statement": "Dando autógrafos no intervalo."
+        },
+        "21:30": {
+          "location": "Foyer",
+          "statement": "Ainda com os fãs quando ouvi a confusão."
+        },
+        "22:00": {
+          "location": "Palco",
+          "statement": "Anunciei o cancelamento ao público."
+        }
+      },
+      "statements": [
+        {
+          "topic": "álibi",
+          "ask": [
+            "onde voce estava esta noite",
+            "conte sua noite",
+            "qual seu alibi",
+            "o que fez no intervalo"
+          ],
+          "answer": "Primeiro ato no palco, troquei de figurino às 20h30 e no intervalo fui ao foyer dar autógrafos. Dezenas de fãs me viram. Às 22h fui eu que anunciei o cancelamento."
+        },
+        {
+          "topic": "21h",
+          "ask": [
+            "onde voce estava as 21h",
+            "as nove horas onde estava",
+            "no horario do crime onde voce estava"
+          ],
+          "answer": "No foyer, cercada de fãs. Uma moça até tirou foto comigo, deve estar no celular dela."
+        },
+        {
+          "topic": "vítima",
+          "ask": [
+            "qual sua relacao com bernardo",
+            "voce brigava com o diretor",
+            "voce odiava bernardo"
+          ],
+          "answer": "Bernardo era um gênio insuportável. Brigávamos sempre — é assim que se faz teatro. Ninguém mata por causa de uma marcação de cena."
+        },
+        {
+          "topic": "joias",
+          "ask": [
+            "voce viu algo estranho",
+            "notou algo diferente",
+            "sumiu alguma coisa",
+            "seu camarim"
+          ],
+          "answer": "Estranho? Quando voltei ao camarim, depois de tudo, meu colar de pérolas tinha sumido! E o alarme do porta-joias estava piscando. O registro fica com a segurança.",
+          "reveals": "E4"
+        },
+        {
+          "topic": "suspeitos",
+          "ask": [
+            "quem voce acha que matou",
+            "quem tinha motivo",
+            "o que acha do caio"
+          ],
+          "answer": "Caio. O substituto. Bernardo ia demiti-lo depois da estreia, todo mundo sabia. Ele andava pelos corredores com aquela cara de Hamlet sem reino."
+        },
+        {
+          "topic": "companhia",
+          "ask": [
+            "voce ia sair da companhia",
+            "outra companhia",
+            "proposta de trabalho"
+          ],
+          "answer": "Quem contou? Sim, recebi uma proposta. E daí? Eu não precisava matar Bernardo para ir embora. Bastava bater a porta."
+        }
+      ]
+    },
+    {
+      "key": "caio",
+      "name": "Caio Ferraz",
+      "role": "Ator substituto",
+      "description": "29 anos, talentoso e ressentido. Substituto do papel de Hamlet há dois anos.",
+      "personality": "Intenso, teatral, alterna entre charme e irritação. Fala muito do próprio talento e da injustiça que sofre.",
+      "secret": "É o assassino. Bernardo ia demiti-lo. Às 21h foi à Sala da Direção pedir uma chance, discutiram e ele o golpeou com o troféu. Diz que estava na Sala de Som com o técnico Marcos.",
+      "isCulprit": true,
+      "evasive": "Isso é irrelevante para a sua investigação, detetive.",
+      "truth": {
+        "20:00": "Coxia",
+        "20:30": "Coxia",
+        "21:00": "Sala da Direção",
+        "21:30": "Coxia",
+        "22:00": "Palco"
+      },
+      "alibi": {
+        "20:00": {
+          "location": "Coxia",
+          "statement": "Assistindo da coxia, como todo substituto."
+        },
+        "20:30": {
+          "location": "Coxia",
+          "statement": "Ainda na coxia."
+        },
+        "21:00": {
+          "location": "Sala de Som",
+          "statement": "Fui conversar com o Marcos na Sala de Som."
+        },
+        "21:30": {
+          "location": "Coxia",
+          "statement": "Voltei para a coxia para o segundo ato."
+        },
+        "22:00": {
+          "location": "Palco",
+          "statement": "Fui ao palco quando cancelaram."
+        }
+      },
+      "statements": [
+        {
+          "topic": "álibi",
+          "ask": [
+            "onde voce estava esta noite",
+            "conte sua noite",
+            "qual seu alibi",
+            "o que fez no intervalo"
+          ],
+          "answer": "Fiquei na coxia o primeiro ato inteiro. No intervalo subi para a Sala de Som conversar com o Marcos, e às 21h30 já estava de volta à coxia."
+        },
+        {
+          "topic": "21h",
+          "ask": [
+            "onde voce estava as 21h",
+            "as nove horas onde estava",
+            "no horario do crime onde voce estava"
+          ],
+          "answer": "Na Sala de Som, com o Marcos. Falando de... efeitos sonoros. Pergunte a ele."
+        },
+        {
+          "topic": "vítima",
+          "ask": [
+            "qual sua relacao com bernardo",
+            "voce gostava do diretor",
+            "bernardo ia te demitir",
+            "demissao"
+          ],
+          "answer": "Bernardo nunca enxergou meu talento. Demitir? Boatos de coxia. Ele precisava de mim, eu sei o texto inteiro de cor."
+        },
+        {
+          "topic": "troféu",
+          "ask": [
+            "trofeu",
+            "arma do crime",
+            "voce entrou na sala da direcao",
+            "sala da direcao"
+          ],
+          "answer": "Eu não piso na Sala da Direção há semanas. Aquele troféu... ele adorava exibir aquilo. Era de mau gosto."
+        },
+        {
+          "topic": "testemunha",
+          "ask": [
+            "voce viu algo estranho",
+            "notou algo diferente",
+            "quem estava nos corredores"
+          ],
+          "answer": "Vi a Lúcia, da bilheteria, subindo para os camarins no intervalo. O que uma bilheteira faz nos camarins?"
+        },
+        {
+          "topic": "suspeitos",
+          "ask": [
+            "quem voce acha que matou",
+            "quem tinha motivo"
+          ],
+          "answer": "Vivian. Ela ia abandonar a companhia e Bernardo ameaçou processá-la. Uma Gertrudes de verdade."
+        }
+      ]
+    },
+    {
+      "key": "marcos",
+      "name": "Marcos Teles",
+      "role": "Técnico de som",
+      "description": "38 anos, trabalha no teatro há 12. Quieto, metódico, vive de fone de ouvido.",
+      "personality": "Lacônico, técnico, responde com poucas palavras e detalhes de equipamento. Fica desconfortável quando perguntam do porão.",
+      "secret": "Às 20h30 estava no porão gravando o espetáculo para vender cópias piratas. Diz que estava na Sala de Som.",
+      "isCulprit": false,
+      "evasive": "Não sei nada disso. Eu cuido do som.",
+      "truth": {
+        "20:00": "Sala de Som",
+        "20:30": "Porão",
+        "21:00": "Sala de Som",
+        "21:30": "Sala de Som",
+        "22:00": "Sala de Som"
+      },
+      "alibi": {
+        "20:00": {
+          "location": "Sala de Som",
+          "statement": "Operando a mesa."
+        },
+        "20:30": {
+          "location": "Sala de Som",
+          "statement": "Operando a mesa."
+        },
+        "21:00": {
+          "location": "Sala de Som",
+          "statement": "Ajustando a trilha do segundo ato."
+        },
+        "21:30": {
+          "location": "Sala de Som",
+          "statement": "Esperando o sinal para o segundo ato."
+        },
+        "22:00": {
+          "location": "Sala de Som",
+          "statement": "Desliguei tudo após o cancelamento."
+        }
+      },
+      "statements": [
+        {
+          "topic": "álibi",
+          "ask": [
+            "onde voce estava esta noite",
+            "conte sua noite",
+            "qual seu alibi"
+          ],
+          "answer": "Sala de Som. A noite toda. Alguém tem que operar a mesa."
+        },
+        {
+          "topic": "21h",
+          "ask": [
+            "onde voce estava as 21h",
+            "as nove horas onde estava",
+            "no horario do crime onde voce estava"
+          ],
+          "answer": "Na Sala de Som, ajustando a trilha do segundo ato. A mesa digital registra cada ajuste, com horário."
+        },
+        {
+          "topic": "caio",
+          "ask": [
+            "caio estava com voce",
+            "o caio foi na sala de som",
+            "voce conversou com caio",
+            "caio diz que estava com voce"
+          ],
+          "answer": "Caio? Comigo? Não. Fiquei sozinho na sala até umas 21h15. Ele não apareceu. Se disse isso, mentiu."
+        },
+        {
+          "topic": "porão",
+          "ask": [
+            "porao",
+            "gravacao pirata",
+            "voce saiu da sala de som",
+            "gravando o espetaculo"
+          ],
+          "answer": "...O porão tem a caixa de energia. Às vezes preciso descer. Só isso."
+        },
+        {
+          "topic": "vítima",
+          "ask": [
+            "qual sua relacao com bernardo",
+            "como era o diretor"
+          ],
+          "answer": "Ele gritava com todo mundo. Comigo menos, porque eu não respondia."
+        },
+        {
+          "topic": "testemunha",
+          "ask": [
+            "voce viu algo estranho",
+            "notou algo diferente",
+            "cameras do teatro"
+          ],
+          "answer": "As câmeras daqui vivem quebradas. Só a do corredor da direção foi consertada, ontem. A Lúcia sabe, ela que chamou o técnico."
+        },
+        {
+          "topic": "suspeitos",
+          "ask": [
+            "quem voce acha que matou",
+            "quem tinha motivo",
+            "suspeita de alguem"
+          ],
+          "answer": "Não acuso ninguém. Só sei que quem diz que estava comigo às nove não estava."
+        }
+      ]
+    },
+    {
+      "key": "lucia",
+      "name": "Lúcia Prado",
+      "role": "Bilheteira",
+      "description": "50 anos, conhece todos os frequentadores pelo nome. Cuida também da segurança do prédio.",
+      "personality": "Falante, fofoqueira simpática, adora dar detalhes de terceiros e foge de perguntas sobre si mesma.",
+      "secret": "Às 21h foi ao camarim de Vivian e roubou um colar de pérolas para pagar dívidas. Diz que estava na bilheteria.",
+      "isCulprit": false,
+      "evasive": "Ai, detetive, disso eu não sei, juro por Deus.",
+      "truth": {
+        "20:00": "Bilheteria",
+        "20:30": "Bilheteria",
+        "21:00": "Camarim de Vivian",
+        "21:30": "Bilheteria",
+        "22:00": "Foyer"
+      },
+      "alibi": {
+        "20:00": {
+          "location": "Bilheteria",
+          "statement": "Vendendo os últimos ingressos."
+        },
+        "20:30": {
+          "location": "Bilheteria",
+          "statement": "Fechando o caixa."
+        },
+        "21:00": {
+          "location": "Bilheteria",
+          "statement": "Contando o dinheiro do caixa."
+        },
+        "21:30": {
+          "location": "Bilheteria",
+          "statement": "Ainda na bilheteria quando ouvi o grito."
+        },
+        "22:00": {
+          "location": "Foyer",
+          "statement": "Ajudei a esvaziar o teatro."
+        }
+      },
+      "statements": [
+        {
+          "topic": "álibi",
+          "ask": [
+            "onde voce estava esta noite",
+            "conte sua noite",
+            "qual seu alibi"
+          ],
+          "answer": "Bilheteria, meu bem, a noite inteira. Vendi, fechei o caixa, contei o dinheiro. Às 22h ajudei a esvaziar o teatro."
+        },
+        {
+          "topic": "21h",
+          "ask": [
+            "onde voce estava as 21h",
+            "as nove horas onde estava",
+            "no horario do crime onde voce estava"
+          ],
+          "answer": "Contando o caixa na bilheteria. Sozinha, que ninguém me ajuda nessa casa."
+        },
+        {
+          "topic": "câmera",
+          "ask": [
+            "cameras do teatro",
+            "camera do corredor",
+            "seguranca do predio",
+            "gravacoes"
+          ],
+          "answer": "A câmera do corredor da direção! Eu mesma chamei o técnico ontem. Ela grava tudo direto no computador da segurança. Ninguém sabia que voltou a funcionar.",
+          "reveals": "E5"
+        },
+        {
+          "topic": "camarim",
+          "ask": [
+            "voce foi aos camarins",
+            "camarim de vivian",
+            "colar de perolas",
+            "joias"
+          ],
+          "answer": "Camarim? Eu? O que eu ia fazer lá, menino? Sou da bilheteria."
+        },
+        {
+          "topic": "vítima",
+          "ask": [
+            "qual sua relacao com bernardo",
+            "como era o diretor"
+          ],
+          "answer": "Seu Bernardo era educado comigo. Já com os atores... Ontem mesmo brigou feio com o Caio, eu ouvi da escada."
+        },
+        {
+          "topic": "suspeitos",
+          "ask": [
+            "quem voce acha que matou",
+            "quem tinha motivo",
+            "o que acha do caio"
+          ],
+          "answer": "O Caio saiu da coxia no intervalo, eu vi. Foi pro lado da escada que sobe pra direção, não pra Sala de Som."
+        },
+        {
+          "topic": "testemunha",
+          "ask": [
+            "voce viu algo estranho",
+            "notou algo diferente",
+            "quem estava nos corredores"
+          ],
+          "answer": "Estranho foi o Caio sair da coxia no intervalo e subir a escada da direção com cara de poucos amigos. E as câmeras... ah, pergunte das câmeras."
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "code": "E1",
+      "title": "Foto de uma fã",
+      "description": "Selfie publicada nas redes às 21h00: Vivian autografando programas no foyer.",
+      "suspect": "vivian",
+      "time": "21:00",
+      "location": "Foyer",
+      "visible": true
+    },
+    {
+      "code": "E2",
+      "title": "Log da mesa de som",
+      "description": "A mesa digital registra ajustes manuais feitos por Marcos às 21h00.",
+      "suspect": "marcos",
+      "time": "21:00",
+      "location": "Sala de Som",
+      "visible": true
+    },
+    {
+      "code": "E3",
+      "title": "Câmera do porão",
+      "description": "Marcos aparece no porão às 20h30, com um gravador ligado a um cabo da caixa de som.",
+      "suspect": "marcos",
+      "time": "20:30",
+      "location": "Porão",
+      "visible": true
+    },
+    {
+      "code": "E4",
+      "title": "Alarme do porta-joias",
+      "description": "O alarme do camarim de Vivian disparou às 21h00; o crachá usado foi o de Lúcia Prado.",
+      "suspect": "lucia",
+      "time": "21:00",
+      "location": "Camarim de Vivian",
+      "visible": false
+    },
+    {
+      "code": "E5",
+      "title": "Câmera do corredor da direção",
+      "description": "Às 21h00, Caio Ferraz entra na Sala da Direção. Sai às 21h06, com as mãos nos bolsos.",
+      "suspect": "caio",
+      "time": "21:00",
+      "location": "Sala da Direção",
+      "visible": false
+    },
+    {
+      "code": "E6",
+      "title": "Laudo pericial",
+      "description": "Traumatismo craniano causado pelo troféu. Hora estimada: 21h00.",
+      "suspect": null,
+      "time": null,
+      "location": null,
+      "visible": true
+    }
+  ]
+}
