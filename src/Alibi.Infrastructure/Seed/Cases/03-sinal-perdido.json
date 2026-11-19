@@ -1,0 +1,478 @@
+{
+  "slug": "sinal-perdido",
+  "title": "Sinal Perdido",
+  "difficulty": "Difícil",
+  "setting": "Observatório da Serra da Mantiqueira — noite de céu limpo, chuva de meteoros.",
+  "victim": "Dra. Íris Antunes, astrônoma, 41 anos",
+  "crimeScene": "Cúpula",
+  "crimeTime": "21:00",
+  "summary": "A Dra. Íris Antunes caiu da escada metálica da cúpula do telescópio na noite em que ia publicar a descoberta da sua vida. Parecia acidente, até o legista encontrar marcas de empurrão. Hora da queda: 21h. Quatro pessoas estavam no observatório isolado na serra.",
+  "solution": "Bianca Leal, doutoranda de Íris, tinha falsificado dados da tese, e Íris ia denunciá-la junto com a publicação. Às 21h Bianca subiu à cúpula para implorar silêncio e a empurrou da escada. Disse que estava dormindo, mas o relógio de corrida que nunca tira registrou seu GPS na cúpula.",
+  "locations": [
+    "Cúpula",
+    "Laboratório",
+    "Refeitório",
+    "Dormitórios",
+    "Estacionamento",
+    "Sala de Servidores",
+    "Trilha"
+  ],
+  "suspects": [
+    {
+      "key": "henrique",
+      "name": "Prof. Henrique Saldanha",
+      "role": "Diretor do observatório",
+      "description": "63 anos, ex-orientador de Íris. Dizem que a descoberta seria creditada só a ela.",
+      "personality": "Arrogante, professoral, responde com aulas de astronomia e desdém. Ofende-se com a ideia de ser suspeito.",
+      "secret": "Estava mesmo no laboratório. Tinha inveja da descoberta, mas é inocente.",
+      "isCulprit": false,
+      "evasive": "Essa pergunta revela mais sobre você do que sobre mim, detetive.",
+      "truth": {
+        "20:00": "Refeitório",
+        "20:30": "Laboratório",
+        "21:00": "Laboratório",
+        "21:30": "Laboratório",
+        "22:00": "Cúpula"
+      },
+      "alibi": {
+        "20:00": {
+          "location": "Refeitório",
+          "statement": "Jantei com a equipe."
+        },
+        "20:30": {
+          "location": "Laboratório",
+          "statement": "Calibrando o espectrômetro."
+        },
+        "21:00": {
+          "location": "Laboratório",
+          "statement": "Analisando espectros."
+        },
+        "21:30": {
+          "location": "Laboratório",
+          "statement": "Ainda no laboratório."
+        },
+        "22:00": {
+          "location": "Cúpula",
+          "statement": "Subi para ver os meteoros e a encontrei."
+        }
+      },
+      "statements": [
+        {
+          "topic": "álibi",
+          "ask": [
+            "onde voce estava esta noite",
+            "conte sua noite",
+            "qual seu alibi"
+          ],
+          "answer": "Jantei às 20h, e das 20h30 em diante estive no laboratório, analisando espectros. Às 22h subi à cúpula para a chuva de meteoros e a encontrei ao pé da escada."
+        },
+        {
+          "topic": "21h",
+          "ask": [
+            "onde voce estava as 21h",
+            "as nove horas onde estava",
+            "no horario do crime onde voce estava"
+          ],
+          "answer": "No laboratório. O espectrômetro exige login pessoal — o registro mostra exatamente quando eu operei a máquina."
+        },
+        {
+          "topic": "vítima",
+          "ask": [
+            "qual sua relacao com iris",
+            "voce tinha inveja",
+            "a descoberta",
+            "publicacao"
+          ],
+          "answer": "Íris foi minha melhor aluna. A descoberta? Usou os meus instrumentos, o meu observatório. Mas ciência não se faz empurrando colegas de escada."
+        },
+        {
+          "topic": "testemunha",
+          "ask": [
+            "voce viu algo estranho",
+            "notou algo diferente",
+            "quem saiu do predio",
+            "estacionamento"
+          ],
+          "answer": "Da janela do laboratório vi faróis no estacionamento por volta das 21h. Diego estava lá fora, conversando com alguém num carro que não é daqui. A câmera do estacionamento deve ter gravado.",
+          "reveals": "E4"
+        },
+        {
+          "topic": "suspeitos",
+          "ask": [
+            "quem voce acha que matou",
+            "quem tinha motivo",
+            "o que acha da bianca"
+          ],
+          "answer": "Bianca andava apavorada. Íris revisava os dados da tese dela com uma lupa. Faça as contas."
+        },
+        {
+          "topic": "acidente",
+          "ask": [
+            "foi acidente",
+            "a escada da cupula",
+            "como ela caiu"
+          ],
+          "answer": "Íris subia aquela escada há quinze anos. De olhos fechados. Acidente é a hipótese mais preguiçosa."
+        }
+      ]
+    },
+    {
+      "key": "bianca",
+      "name": "Bianca Leal",
+      "role": "Doutoranda",
+      "description": "27 anos, orientanda de Íris. Corredora de montanha, sempre de relógio esportivo.",
+      "personality": "Ansiosa, educada demais, chora com facilidade e insiste que dormiu cedo. Muda de assunto quando falam da tese.",
+      "secret": "É a assassina. Falsificou dados da tese; Íris ia denunciá-la. Às 21h subiu à cúpula para implorar silêncio e a empurrou. Diz que estava dormindo no dormitório. Às 21h30 foi à trilha se livrar das anotações.",
+      "isCulprit": true,
+      "evasive": "Eu... eu não quero falar sobre isso agora.",
+      "truth": {
+        "20:00": "Refeitório",
+        "20:30": "Dormitórios",
+        "21:00": "Cúpula",
+        "21:30": "Trilha",
+        "22:00": "Dormitórios"
+      },
+      "alibi": {
+        "20:00": {
+          "location": "Refeitório",
+          "statement": "Jantei com todos."
+        },
+        "20:30": {
+          "location": "Dormitórios",
+          "statement": "Fui deitar, estava exausta."
+        },
+        "21:00": {
+          "location": "Dormitórios",
+          "statement": "Dormindo."
+        },
+        "22:00": {
+          "location": "Dormitórios",
+          "statement": "Acordei com o alarme."
+        }
+      },
+      "statements": [
+        {
+          "topic": "álibi",
+          "ask": [
+            "onde voce estava esta noite",
+            "conte sua noite",
+            "qual seu alibi"
+          ],
+          "answer": "Jantei às 20h e fui direto para o dormitório. Estava exausta, dormi. Só acordei às 22h com o alarme."
+        },
+        {
+          "topic": "21h",
+          "ask": [
+            "onde voce estava as 21h",
+            "as nove horas onde estava",
+            "no horario do crime onde voce estava"
+          ],
+          "answer": "Dormindo! No meu quarto. Eu não... eu nem vi ela depois do jantar."
+        },
+        {
+          "topic": "21h30",
+          "ask": [
+            "onde voce estava as 21h30",
+            "nove e meia",
+            "trilha",
+            "voce saiu do dormitorio"
+          ],
+          "answer": "Eu já disse, dormindo. A noite toda. Por que vocês ficam perguntando a mesma coisa?"
+        },
+        {
+          "topic": "tese",
+          "ask": [
+            "sua tese",
+            "dados falsificados",
+            "iris ia te denunciar",
+            "revisao da tese"
+          ],
+          "answer": "A Íris era exigente, só isso. Minha tese está... está quase pronta. Isso não tem nada a ver."
+        },
+        {
+          "topic": "relógio",
+          "ask": [
+            "seu relogio",
+            "relogio de corrida",
+            "gps",
+            "voce corre"
+          ],
+          "answer": "Corro na serra todo dia. O relógio? Eu... tiro para dormir. Às vezes."
+        },
+        {
+          "topic": "vítima",
+          "ask": [
+            "qual sua relacao com iris",
+            "voce gostava da sua orientadora"
+          ],
+          "answer": "Ela era minha orientadora. Minha referência. Eu... eu ainda não acredito."
+        },
+        {
+          "topic": "suspeitos",
+          "ask": [
+            "quem voce acha que matou",
+            "quem tinha motivo"
+          ],
+          "answer": "O professor Henrique! Ele ia perder o crédito da descoberta. E o Diego vivia mexendo nos dados dos servidores."
+        },
+        {
+          "topic": "testemunha",
+          "ask": [
+            "voce viu algo estranho",
+            "notou algo diferente",
+            "ouviu alguma coisa",
+            "barulho"
+          ],
+          "answer": "Eu estava dormindo, não vi nada! ...Talvez tenha ouvido um carro no estacionamento. Mas eu estava dormindo."
+        }
+      ]
+    },
+    {
+      "key": "diego",
+      "name": "Diego Matos",
+      "role": "Técnico de TI",
+      "description": "34 anos, cuida dos servidores que guardam os dados do telescópio.",
+      "personality": "Sarcástico, nerd, responde com jargão técnico. Fica evasivo e irritado quando o assunto é o estacionamento.",
+      "secret": "Às 21h estava no estacionamento vendendo cópias dos dados do telescópio para um observatório estrangeiro. Diz que estava na Sala de Servidores.",
+      "isCulprit": false,
+      "evasive": "Sem comentários. Literalmente: 404 Not Found.",
+      "truth": {
+        "20:00": "Refeitório",
+        "20:30": "Sala de Servidores",
+        "21:00": "Estacionamento",
+        "21:30": "Sala de Servidores",
+        "22:00": "Cúpula"
+      },
+      "alibi": {
+        "20:00": {
+          "location": "Refeitório",
+          "statement": "Jantar."
+        },
+        "20:30": {
+          "location": "Sala de Servidores",
+          "statement": "Backup noturno."
+        },
+        "21:00": {
+          "location": "Sala de Servidores",
+          "statement": "Monitorando o backup."
+        },
+        "21:30": {
+          "location": "Sala de Servidores",
+          "statement": "Backup terminou."
+        },
+        "22:00": {
+          "location": "Cúpula",
+          "statement": "Corri quando o alarme tocou."
+        }
+      },
+      "statements": [
+        {
+          "topic": "álibi",
+          "ask": [
+            "onde voce estava esta noite",
+            "conte sua noite",
+            "qual seu alibi"
+          ],
+          "answer": "Jantei e fui pra Sala de Servidores rodar o backup noturno. Fiquei lá até o alarme, às 22h."
+        },
+        {
+          "topic": "21h",
+          "ask": [
+            "onde voce estava as 21h",
+            "as nove horas onde estava",
+            "no horario do crime onde voce estava"
+          ],
+          "answer": "Sala de Servidores. Monitorando backup. Emocionante, eu sei."
+        },
+        {
+          "topic": "estacionamento",
+          "ask": [
+            "estacionamento",
+            "carro estranho",
+            "com quem voce falou la fora",
+            "faróis"
+          ],
+          "answer": "...Fui pegar um carregador no carro. Dois minutos. Isso é crime agora?"
+        },
+        {
+          "topic": "relógio",
+          "ask": [
+            "voce viu algo estranho",
+            "notou algo diferente",
+            "bianca",
+            "relogio de corrida",
+            "gps"
+          ],
+          "answer": "A Bianca nunca tira aquele relógio de corrida, nem pra dormir. Ele sincroniza o GPS com o Wi-Fi daqui — eu vejo os logs passando no servidor. Quer que eu puxe o registro de hoje?",
+          "reveals": "E5"
+        },
+        {
+          "topic": "vítima",
+          "ask": [
+            "qual sua relacao com iris",
+            "como era a dra iris"
+          ],
+          "answer": "Ela me pedia backup de tudo, três vezes. Paranoica com os dados. Agora faz sentido."
+        },
+        {
+          "topic": "suspeitos",
+          "ask": [
+            "quem voce acha que matou",
+            "quem tinha motivo"
+          ],
+          "answer": "O professor sempre quis o crédito. E a Sônia mexe em tudo que é quarto com a chave mestra."
+        }
+      ]
+    },
+    {
+      "key": "sonia",
+      "name": "Sônia Ribeiro",
+      "role": "Zeladora e cozinheira",
+      "description": "56 anos, mora no observatório há 20 anos. Cozinha, limpa e guarda a chave mestra.",
+      "personality": "Desconfiada, prática, fala como mineira do interior. Gosta de Íris e fica na defensiva quando falam da chave mestra.",
+      "secret": "Às 20h entrou no quarto de Íris com a chave mestra para ler o diário dela — curiosidade. Diz que estava no refeitório.",
+      "isCulprit": false,
+      "evasive": "Uai, isso aí eu não sei não, moço.",
+      "truth": {
+        "20:00": "Dormitórios",
+        "20:30": "Refeitório",
+        "21:00": "Refeitório",
+        "21:30": "Refeitório",
+        "22:00": "Cúpula"
+      },
+      "alibi": {
+        "20:00": {
+          "location": "Refeitório",
+          "statement": "Servindo o jantar."
+        },
+        "20:30": {
+          "location": "Refeitório",
+          "statement": "Lavando a louça."
+        },
+        "21:00": {
+          "location": "Refeitório",
+          "statement": "Assando o pão de amanhã."
+        },
+        "21:30": {
+          "location": "Refeitório",
+          "statement": "Tirando o pão do forno."
+        },
+        "22:00": {
+          "location": "Cúpula",
+          "statement": "Subi quando ouvi o alarme."
+        }
+      },
+      "statements": [
+        {
+          "topic": "álibi",
+          "ask": [
+            "onde voce estava esta noite",
+            "conte sua noite",
+            "qual seu alibi"
+          ],
+          "answer": "Fiquei no refeitório a noite toda, moço. Servi a janta, lavei a louça, botei o pão no forno às nove. Subi correndo quando o alarme tocou."
+        },
+        {
+          "topic": "21h",
+          "ask": [
+            "onde voce estava as 21h",
+            "as nove horas onde estava",
+            "no horario do crime onde voce estava"
+          ],
+          "answer": "Botando o pão no forno. O forno é digital, marca a hora que liga. Pode olhar."
+        },
+        {
+          "topic": "chave mestra",
+          "ask": [
+            "chave mestra",
+            "voce entrou no quarto de iris",
+            "diario",
+            "dormitorio de iris"
+          ],
+          "answer": "A chave mestra é pra limpeza! Eu... eu só arrumei o quarto da doutora. Rapidinho. Antes do jantar."
+        },
+        {
+          "topic": "testemunha",
+          "ask": [
+            "voce viu algo estranho",
+            "notou algo diferente",
+            "alguem passou pelo refeitorio"
+          ],
+          "answer": "Lá pras nove a menina Bianca passou correndo pelo corredor dos fundos, de tênis de corrida. Achei que ia correr na trilha, de noite! Doideira."
+        },
+        {
+          "topic": "vítima",
+          "ask": [
+            "qual sua relacao com iris",
+            "voce gostava da dra iris"
+          ],
+          "answer": "A doutora Íris era boa pra mim. Me trazia doce de leite de Minas. Quem fez isso merece cadeia."
+        },
+        {
+          "topic": "suspeitos",
+          "ask": [
+            "quem voce acha que matou",
+            "quem tinha motivo"
+          ],
+          "answer": "Esse Diego aí não me engana. Vive saindo pro estacionamento de noite pra falar no telefone."
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "code": "E1",
+      "title": "Log do espectrômetro",
+      "description": "Login pessoal de Henrique Saldanha às 21h00, com três análises salvas.",
+      "suspect": "henrique",
+      "time": "21:00",
+      "location": "Laboratório",
+      "visible": true
+    },
+    {
+      "code": "E2",
+      "title": "Registro da chave mestra",
+      "description": "A fechadura eletrônica do quarto de Íris foi aberta com a chave mestra às 20h00.",
+      "suspect": "sonia",
+      "time": "20:00",
+      "location": "Dormitórios",
+      "visible": true
+    },
+    {
+      "code": "E3",
+      "title": "Forno digital do refeitório",
+      "description": "O forno foi ligado às 21h00. Há farinha nas digitais do painel: Sônia.",
+      "suspect": "sonia",
+      "time": "21:00",
+      "location": "Refeitório",
+      "visible": true
+    },
+    {
+      "code": "E4",
+      "title": "Câmera do estacionamento",
+      "description": "Às 21h00, Diego entrega um HD externo a um homem num carro com placa de fora.",
+      "suspect": "diego",
+      "time": "21:00",
+      "location": "Estacionamento",
+      "visible": false
+    },
+    {
+      "code": "E5",
+      "title": "GPS do relógio de corrida",
+      "description": "Sincronização via Wi-Fi: o relógio de Bianca Leal registrou posição na Cúpula às 21h00 e na Trilha às 21h30.",
+      "suspect": "bianca",
+      "time": "21:00",
+      "location": "Cúpula",
+      "visible": false
+    },
+    {
+      "code": "E6",
+      "title": "Laudo do legista",
+      "description": "Queda da escada da cúpula com hematomas de empurrão nos ombros. Hora: 21h00.",
+      "suspect": null,
+      "time": null,
+      "location": null,
+      "visible": true
+    }
+  ]
+}

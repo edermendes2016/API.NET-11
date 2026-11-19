@@ -1,0 +1,523 @@
+{
+  "slug": "o-ultimo-brinde",
+  "title": "O Último Brinde",
+  "difficulty": "Fácil",
+  "setting": "Mansão Valverde, Petrópolis — noite de sábado, festa de 70 anos do anfitrião.",
+  "victim": "Augusto Valverde, industrial, 70 anos",
+  "crimeScene": "Escritório",
+  "crimeTime": "21:00",
+  "summary": "Durante a própria festa de aniversário, Augusto Valverde se recolheu ao escritório para \"um conhaque em paz\". Às 22h foi encontrado morto, com a taça ainda na mão. O laudo aponta envenenamento por digitálico às 21h. Quatro pessoas tinham motivo e acesso à casa. Todas juram que estavam longe do escritório.",
+  "solution": "A Dra. Clarice Moura, médica da família, desviava há anos remédios controlados receitados em nome de Augusto — e ele tinha descoberto. Às 21h ela usou o cartão de acesso para entrar no escritório e colocou digitálico no conhaque. O empréstimo de livro às 20h30 foi montado para sustentar o álibi da biblioteca.",
+  "locations": [
+    "Salão de Festas",
+    "Escritório",
+    "Jardim",
+    "Cozinha",
+    "Adega",
+    "Biblioteca",
+    "Garagem"
+  ],
+  "suspects": [
+    {
+      "key": "helena",
+      "name": "Helena Valverde",
+      "role": "Esposa da vítima",
+      "description": "Elegante, 58 anos, anfitriã impecável. Casada com Augusto há 30 anos.",
+      "personality": "Fria, educada, responde com frases curtas e se ofende fácil. Protege a imagem da família acima de tudo.",
+      "secret": "Às 21h estava no jardim, ao telefone com o advogado, acertando o pedido de divórcio. Mente para não parecer que tinha motivo.",
+      "isCulprit": false,
+      "evasive": "Detetive, não vou dignificar essa pergunta com uma resposta.",
+      "truth": {
+        "20:00": "Salão de Festas",
+        "20:30": "Salão de Festas",
+        "21:00": "Jardim",
+        "21:30": "Salão de Festas",
+        "22:00": "Escritório"
+      },
+      "alibi": {
+        "20:00": {
+          "location": "Salão de Festas",
+          "statement": "Recebendo os convidados."
+        },
+        "20:30": {
+          "location": "Salão de Festas",
+          "statement": "Conversando com os Albuquerque."
+        },
+        "21:00": {
+          "location": "Salão de Festas",
+          "statement": "Ao lado do bolo, organizando o parabéns."
+        },
+        "21:30": {
+          "location": "Salão de Festas",
+          "statement": "Procurando Augusto para o parabéns."
+        },
+        "22:00": {
+          "location": "Escritório",
+          "statement": "Encontrei meu marido... morto."
+        }
+      },
+      "statements": [
+        {
+          "topic": "álibi",
+          "ask": [
+            "onde voce estava esta noite",
+            "conte sua noite",
+            "qual seu alibi",
+            "o que voce fez na festa"
+          ],
+          "answer": "Passei a noite inteira no salão, recebendo convidados. Às 21h estava ao lado do bolo, organizando o parabéns. Às 22h fui ao escritório chamar Augusto e... o encontrei."
+        },
+        {
+          "topic": "21h",
+          "ask": [
+            "onde voce estava as 21h",
+            "as nove horas onde estava",
+            "no horario do crime onde voce estava"
+          ],
+          "answer": "No salão, claro. Ao lado do bolo. Uma anfitriã não abandona os convidados."
+        },
+        {
+          "topic": "vítima",
+          "ask": [
+            "como era seu casamento",
+            "qual sua relacao com augusto",
+            "voce amava seu marido",
+            "voces brigavam"
+          ],
+          "answer": "Trinta anos de casamento, detetive. Tivemos nossos invernos, como todo casal. Mas eu jamais faria mal a ele."
+        },
+        {
+          "topic": "divórcio",
+          "ask": [
+            "voce ia se divorciar",
+            "advogado",
+            "divorcio",
+            "telefone",
+            "com quem voce falou ao telefone"
+          ],
+          "answer": "Quem lhe contou isso? ...Está bem. Eu falei com meu advogado. Mas foi rápido, e não muda nada."
+        },
+        {
+          "topic": "testemunha",
+          "ask": [
+            "voce viu algo estranho",
+            "notou algo diferente",
+            "alguem entrou no escritorio",
+            "quem estava perto do escritorio"
+          ],
+          "answer": "A Dra. Clarice sumiu do salão por um bom tempo. Disse que ia à biblioteca. Ela sempre prefere livros a pessoas."
+        },
+        {
+          "topic": "suspeitos",
+          "ask": [
+            "quem voce acha que matou",
+            "quem tinha motivo",
+            "o que acha do sobrinho rafael"
+          ],
+          "answer": "Rafael deve dinheiro até ao padeiro. Augusto ia cortar a mesada dele na segunda-feira. Tire suas conclusões."
+        },
+        {
+          "topic": "conhaque",
+          "ask": [
+            "quem serviu o conhaque",
+            "veneno",
+            "a taca de conhaque",
+            "digitalico remedio"
+          ],
+          "answer": "Augusto só bebia o conhaque do escritório, o da garrafa de cristal. Remédios? Quem cuidava disso era a Clarice."
+        }
+      ]
+    },
+    {
+      "key": "rafael",
+      "name": "Rafael Valverde",
+      "role": "Sobrinho e herdeiro",
+      "description": "32 anos, charmoso, apostador. Herdaria uma parte da fortuna.",
+      "personality": "Debochado, nervoso, fala rápido e faz piada quando está acuado. Odeia ser tratado como suspeito óbvio.",
+      "secret": "Tem dívidas de jogo, mas passou a noite na garagem tentando consertar o carro esportivo que queria vender para pagá-las.",
+      "isCulprit": false,
+      "evasive": "Olha, detetive, sem meu advogado eu não falo sobre isso.",
+      "truth": {
+        "20:00": "Salão de Festas",
+        "20:30": "Garagem",
+        "21:00": "Garagem",
+        "21:30": "Garagem",
+        "22:00": "Salão de Festas"
+      },
+      "alibi": {
+        "20:00": {
+          "location": "Salão de Festas",
+          "statement": "Fiz o brinde de abertura."
+        },
+        "20:30": {
+          "location": "Garagem",
+          "statement": "Fui mexer no carro."
+        },
+        "21:00": {
+          "location": "Garagem",
+          "statement": "Ainda com a cabeça dentro do motor."
+        },
+        "21:30": {
+          "location": "Garagem",
+          "statement": "Desisti do carro, tomei uma cerveja ali mesmo."
+        },
+        "22:00": {
+          "location": "Salão de Festas",
+          "statement": "Voltei quando ouvi os gritos."
+        }
+      },
+      "statements": [
+        {
+          "topic": "álibi",
+          "ask": [
+            "onde voce estava esta noite",
+            "conte sua noite",
+            "qual seu alibi",
+            "o que voce fez na festa"
+          ],
+          "answer": "Fiz o brinde às 20h e fugi pra garagem. Fiquei lá até ouvir os gritos, umas 22h. Festa de velho não é comigo."
+        },
+        {
+          "topic": "21h",
+          "ask": [
+            "onde voce estava as 21h",
+            "as nove horas onde estava",
+            "no horario do crime onde voce estava"
+          ],
+          "answer": "Garagem. Com graxa até o cotovelo. Tem câmera lá, pode conferir."
+        },
+        {
+          "topic": "vítima",
+          "ask": [
+            "qual sua relacao com seu tio",
+            "voce gostava de augusto",
+            "voce vai herdar",
+            "heranca"
+          ],
+          "answer": "O tio Augusto era duro, mas pagava minhas contas. Morto ele não me paga mais nada, né? A herança fica presa em inventário por anos."
+        },
+        {
+          "topic": "dívidas",
+          "ask": [
+            "voce tem dividas",
+            "jogo apostas",
+            "precisava de dinheiro",
+            "mesada"
+          ],
+          "answer": "Tenho, e daí? Por isso estava consertando o carro: ia vender na semana que vem. Matar o tio não paga agiota nenhum."
+        },
+        {
+          "topic": "testemunha",
+          "ask": [
+            "voce viu algo estranho",
+            "notou algo diferente",
+            "viu alguem pela janela",
+            "quem estava no jardim"
+          ],
+          "answer": "Pela janela da garagem dá pra ver o jardim. Lá pelas 21h a tia Helena estava lá, sozinha, falando no telefone, toda escondida. O garçom também viu, ele passou com a bandeja.",
+          "reveals": "E4"
+        },
+        {
+          "topic": "suspeitos",
+          "ask": [
+            "quem voce acha que matou",
+            "quem tinha motivo",
+            "o que acha da medica clarice"
+          ],
+          "answer": "A Clarice. Médica que atende uma família só por trinta anos? Tem coisa aí. O tio andava conferindo as receitas dele."
+        },
+        {
+          "topic": "conhaque",
+          "ask": [
+            "quem serviu o conhaque",
+            "veneno",
+            "digitalico remedio",
+            "a taca"
+          ],
+          "answer": "Nunca entrei no escritório hoje. E não entendo nada de remédio, eu mal sei tomar aspirina."
+        }
+      ]
+    },
+    {
+      "key": "clarice",
+      "name": "Dra. Clarice Moura",
+      "role": "Médica da família",
+      "description": "61 anos, médica particular dos Valverde há três décadas. Calma e meticulosa.",
+      "personality": "Serena, técnica, usa termos médicos e responde com precisão excessiva. Nunca perde a compostura, mas fica ríspida quando o assunto são receitas ou o escritório.",
+      "secret": "É a assassina. Desviava remédios controlados receitados em nome de Augusto; ele descobriu e ia denunciá-la. Às 21h entrou no escritório com o cartão de acesso e envenenou o conhaque. Pegou um livro na biblioteca às 20h30 para fabricar o álibi.",
+      "isCulprit": true,
+      "evasive": "Prefiro me ater aos fatos clínicos, detetive.",
+      "truth": {
+        "20:00": "Salão de Festas",
+        "20:30": "Biblioteca",
+        "21:00": "Escritório",
+        "21:30": "Biblioteca",
+        "22:00": "Salão de Festas"
+      },
+      "alibi": {
+        "20:00": {
+          "location": "Salão de Festas",
+          "statement": "Cumprimentei o aniversariante."
+        },
+        "20:30": {
+          "location": "Biblioteca",
+          "statement": "Fui ler um pouco, festas me cansam."
+        },
+        "21:00": {
+          "location": "Biblioteca",
+          "statement": "Ainda lendo. Sozinha."
+        },
+        "21:30": {
+          "location": "Biblioteca",
+          "statement": "Terminei o capítulo."
+        },
+        "22:00": {
+          "location": "Salão de Festas",
+          "statement": "Atendi Helena após os gritos."
+        }
+      },
+      "statements": [
+        {
+          "topic": "álibi",
+          "ask": [
+            "onde voce estava esta noite",
+            "conte sua noite",
+            "qual seu alibi",
+            "o que voce fez na festa"
+          ],
+          "answer": "Cumprimentei Augusto às 20h, e às 20h30 me recolhi à biblioteca. Fiquei lá, lendo, até ouvir os gritos às 22h. A ficha de empréstimo confirma."
+        },
+        {
+          "topic": "21h",
+          "ask": [
+            "onde voce estava as 21h",
+            "as nove horas onde estava",
+            "no horario do crime onde voce estava"
+          ],
+          "answer": "Na biblioteca, lendo Machado de Assis. Sozinha, infelizmente — não há quem confirme além do livro."
+        },
+        {
+          "topic": "vítima",
+          "ask": [
+            "qual sua relacao com augusto",
+            "voce gostava dele",
+            "ha quanto tempo trabalha para a familia",
+            "saude de augusto"
+          ],
+          "answer": "Fui médica de Augusto por trinta anos. Hipertenso, cardiopata, teimoso. Eu o mantive vivo muito mais tempo do que ele merecia."
+        },
+        {
+          "topic": "remédios",
+          "ask": [
+            "digitalico remedio",
+            "veneno",
+            "receitas",
+            "quem tinha acesso aos remedios",
+            "voce receitava digitalico"
+          ],
+          "answer": "Digitálico é um medicamento comum para o coração. Muitas pessoas têm acesso. Insinuar algo por eu ser médica é... raso, detetive."
+        },
+        {
+          "topic": "escritório",
+          "ask": [
+            "voce entrou no escritorio",
+            "cartao de acesso",
+            "fechadura do escritorio",
+            "quem tem a chave do escritorio"
+          ],
+          "answer": "Eu tenho um cartão, sim, para emergências. Mas não entrei no escritório esta noite. Por que entraria?"
+        },
+        {
+          "topic": "testemunha",
+          "ask": [
+            "voce viu algo estranho",
+            "notou algo diferente",
+            "alguem entrou no escritorio"
+          ],
+          "answer": "Da biblioteca não se vê nada. Mas reparei que Otávio desceu à adega mais de uma vez. Mordomos e garrafas caras..."
+        },
+        {
+          "topic": "suspeitos",
+          "ask": [
+            "quem voce acha que matou",
+            "quem tinha motivo"
+          ],
+          "answer": "Helena estava infeliz há anos. E Rafael precisava de dinheiro. Eu, por outro lado, perco meu melhor paciente."
+        }
+      ]
+    },
+    {
+      "key": "otavio",
+      "name": "Otávio Brandão",
+      "role": "Mordomo",
+      "description": "67 anos, serve a família há 40. Conhece cada canto da casa.",
+      "personality": "Formal, cerimonioso, trata todos por 'senhor' e 'senhora'. Sabe de tudo, mas só fala se for perguntado do jeito certo.",
+      "secret": "Às 21h30 estava na adega surrupiando uma garrafa rara para vender. Diz que estava na cozinha.",
+      "isCulprit": false,
+      "evasive": "Perdão, senhor detetive, mas não me cabe comentar.",
+      "truth": {
+        "20:00": "Salão de Festas",
+        "20:30": "Cozinha",
+        "21:00": "Cozinha",
+        "21:30": "Adega",
+        "22:00": "Escritório"
+      },
+      "alibi": {
+        "20:00": {
+          "location": "Salão de Festas",
+          "statement": "Servindo o champanhe."
+        },
+        "20:30": {
+          "location": "Cozinha",
+          "statement": "Supervisionando o bolo."
+        },
+        "21:00": {
+          "location": "Cozinha",
+          "statement": "Ainda na cozinha, com a equipe."
+        },
+        "21:30": {
+          "location": "Cozinha",
+          "statement": "Preparando as velas."
+        },
+        "22:00": {
+          "location": "Escritório",
+          "statement": "Acudi a senhora Helena."
+        }
+      },
+      "statements": [
+        {
+          "topic": "álibi",
+          "ask": [
+            "onde voce estava esta noite",
+            "conte sua noite",
+            "qual seu alibi",
+            "o que voce fez na festa"
+          ],
+          "answer": "Servi o champanhe às 20h e depois fiquei na cozinha supervisionando a equipe até o parabéns. Às 22h ouvi a senhora Helena gritar e corri ao escritório."
+        },
+        {
+          "topic": "21h",
+          "ask": [
+            "onde voce estava as 21h",
+            "as nove horas onde estava",
+            "no horario do crime onde voce estava"
+          ],
+          "answer": "Na cozinha, senhor. Quatro cozinheiros podem confirmar."
+        },
+        {
+          "topic": "adega",
+          "ask": [
+            "voce foi a adega",
+            "garrafa sumiu",
+            "vinho",
+            "adega"
+          ],
+          "answer": "A adega? Eu... talvez tenha descido um instante para buscar um vinho. Nada digno de nota."
+        },
+        {
+          "topic": "escritório",
+          "ask": [
+            "cartao de acesso",
+            "fechadura do escritorio",
+            "quem tem a chave do escritorio",
+            "quem entra no escritorio"
+          ],
+          "answer": "O escritório tem fechadura eletrônica, senhor. Só três cartões: o do patrão, o da senhora e o da Dra. Clarice. O sistema registra cada entrada — o relatório fica no computador da portaria.",
+          "reveals": "E3"
+        },
+        {
+          "topic": "vítima",
+          "ask": [
+            "como era augusto",
+            "voce gostava do patrao",
+            "relacao com augusto"
+          ],
+          "answer": "O senhor Augusto era exigente, mas justo. Quarenta anos a seu serviço. Hoje é um dia muito triste."
+        },
+        {
+          "topic": "testemunha",
+          "ask": [
+            "voce viu algo estranho",
+            "notou algo diferente",
+            "alguem entrou no escritorio"
+          ],
+          "answer": "Vi a Dra. Clarice no corredor do escritório, pouco antes das nove. Mas a biblioteca fica no mesmo corredor, senhor."
+        },
+        {
+          "topic": "conhaque",
+          "ask": [
+            "quem serviu o conhaque",
+            "a garrafa de cristal",
+            "veneno"
+          ],
+          "answer": "O conhaque é do próprio escritório. Eu reabasteci a garrafa à tarde — estava perfeito. Ninguém da cozinha entra lá."
+        },
+        {
+          "topic": "suspeitos",
+          "ask": [
+            "quem voce acha que matou",
+            "quem tinha motivo",
+            "suspeita de alguem"
+          ],
+          "answer": "Não me cabe acusar ninguém, senhor. Mas o patrão andava conferindo receitas e frascos de remédio na última semana. Ficou muito aborrecido com o que encontrou."
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "code": "E1",
+      "title": "Câmera da garagem",
+      "description": "Gravação contínua: Rafael aparece debruçado sobre o motor do carro às 21h.",
+      "suspect": "rafael",
+      "time": "21:00",
+      "location": "Garagem",
+      "visible": true
+    },
+    {
+      "code": "E2",
+      "title": "Ficha de empréstimo da biblioteca",
+      "description": "Clarice Moura retirou 'Memórias Póstumas de Brás Cubas' às 20h30.",
+      "suspect": "clarice",
+      "time": "20:30",
+      "location": "Biblioteca",
+      "visible": true
+    },
+    {
+      "code": "E3",
+      "title": "Registro da fechadura eletrônica",
+      "description": "Relatório da portaria: o cartão de Clarice Moura abriu o escritório às 21h00.",
+      "suspect": "clarice",
+      "time": "21:00",
+      "location": "Escritório",
+      "visible": false
+    },
+    {
+      "code": "E4",
+      "title": "Depoimento do garçom",
+      "description": "O garçom viu Helena Valverde no jardim, ao telefone, às 21h.",
+      "suspect": "helena",
+      "time": "21:00",
+      "location": "Jardim",
+      "visible": false
+    },
+    {
+      "code": "E5",
+      "title": "Câmera da adega",
+      "description": "Otávio aparece guardando uma garrafa no paletó às 21h30.",
+      "suspect": "otavio",
+      "time": "21:30",
+      "location": "Adega",
+      "visible": true
+    },
+    {
+      "code": "E6",
+      "title": "Laudo toxicológico",
+      "description": "Digitálico em dose letal no conhaque. Ingestão estimada às 21h.",
+      "suspect": null,
+      "time": null,
+      "location": null,
+      "visible": true
+    }
+  ]
+}
