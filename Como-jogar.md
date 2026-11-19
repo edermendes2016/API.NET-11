@@ -16,6 +16,14 @@ Abra http://localhost:8080. Na primeira subida o SQL Server leva uns 30 segundos
 | http://localhost:8080/docs | Referência da API (Scalar) |
 | http://localhost:8080/openapi/v1.json | Documento OpenAPI |
 
+Para mexer no frontend sem Docker, rode a API com `dotnet run --project src/Alibi.Api` (porta 5165) e use o servidor do Vite, que repassa `/api` para ela:
+
+```bash
+cd src/Alibi.Web
+npm install
+npm run dev
+```
+
 Variáveis opcionais: `ANTHROPIC_API_KEY` (liga a IA), `ANTHROPIC_MODEL` (padrão `claude-opus-5-5`) e `SA_PASSWORD`.
 
 ## Regras

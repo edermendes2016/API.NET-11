@@ -4,10 +4,13 @@
 src/
   Alibi.Domain/          regras puras: unions, avaliação da acusação, embedder offline
   Alibi.Infrastructure/  EF Core 11, migrations, seed dos casos, busca vetorial, IA
-  Alibi.Api/             Minimal APIs + interface web estática (wwwroot)
+  Alibi.Api/             Minimal APIs; serve o frontend compilado (wwwroot)
+  Alibi.Web/             frontend em React 19 + Vite + TypeScript
 tests/
   Alibi.Tests/           xUnit
 ```
+
+O frontend é compilado num estágio Node do mesmo Dockerfile e copiado para o `wwwroot` da API, então não existe um container separado para ele.
 
 O domínio não conhece EF nem HTTP. A infraestrutura faz as consultas (FULL JOIN, vetores) e entrega linhas simples (`TimelineRow`) para o domínio decidir.
 

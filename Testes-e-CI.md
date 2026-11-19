@@ -20,7 +20,8 @@ Os testes de dados já pegaram falhas reais de roteiro, como suspeitos sem respo
 `.github/workflows/ci.yml` roda em push e pull request:
 
 1. `dotnet build` e `dotnet test` com o SDK 11.0.x
-2. `docker build` da imagem da API
+2. `npm ci` e `npm run build` do frontend React (checagem de tipos do TypeScript + build do Vite)
+3. `docker build` da imagem da API
 
 ## Teste manual de ponta a ponta
 
