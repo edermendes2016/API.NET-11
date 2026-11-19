@@ -23,7 +23,7 @@ Opcional: com `ANTHROPIC_API_KEY=...` no ambiente, os suspeitos respondem com IA
 | **SQL Server 2025 `VECTOR`** | busca das falas dos suspeitos por similaridade |
 | **IA com `IChatClient`** | interrogatório com Claude, com alternativa offline |
 
-Stack: .NET 11, ASP.NET Core Minimal APIs, EF Core 11, SQL Server 2025, xUnit, Docker.
+Stack: .NET 11, ASP.NET Core Minimal APIs, React 19 + Vite (frontend), EF Core 11, SQL Server 2025, xUnit, Docker.
 
 ## Documentação
 

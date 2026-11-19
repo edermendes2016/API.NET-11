@@ -5,3 +5,6 @@ obj/
 *.user
 TestResults/
 .env
+node_modules/
+src/Alibi.Api/wwwroot/
+*.tsbuildinfo
